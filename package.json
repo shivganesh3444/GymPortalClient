@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-extensions/model": "^7.0.1",
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
