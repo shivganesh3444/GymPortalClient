@@ -8,6 +8,10 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HomeModule } from './home/home.module';
 import { UserfeesModule } from './userfees/userfees.module';
 import { ContactModule } from './contact/contact.module';
+import { HttpModule } from '@angular/http';
+import { RestService } from './shared/services/rest.service';
+import { FeesService } from './shared/services/fees.service';
+import { UserService } from './shared/services/user.service';
 
 
 @NgModule({
@@ -18,11 +22,12 @@ import { ContactModule } from './contact/contact.module';
     BrowserModule,
     SharedModule,
     HomeModule,
+    HttpModule,
     UserfeesModule,
     ContactModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [RestService, UserService, FeesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
