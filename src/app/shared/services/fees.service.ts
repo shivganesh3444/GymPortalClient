@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Model, ModelFactory } from '@angular-extensions/model';
-import { Observable } from 'rxjs/Observable';
 // import * as moment from 'moment';
 import { Fees } from '../model/fees.model';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class FeesService {
